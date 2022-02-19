@@ -7,7 +7,7 @@ I'm a CSE UG, getting my hands dirty in programming.
 
 #### reach me:
 
-- my linkedin [@saatvik333](www.linkedin.com/in/saatvik333)
+- my linkedin [@saatvik333](https://linkedin.com/in/saatvik333)
 
 - my insta [@saatvik333](https://instagram.com/saatvik333)
   
