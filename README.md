@@ -1,16 +1,14 @@
-### Hi there 👋
+# **hyy!!!**
 
-<!--
-**saatvik333/saatvik333** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+#### about me:
+<!-- ![aboutme](https://user-images.githubusercontent.com/75624562/154798631-ff499d69-8b9d-49c1-bcad-d835f0df6a83.png) -->
 
-Here are some ideas to get you started:
+I'm a CSE UG, getting my hands dirty in programming.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### reach me:
+
+- my linkedin [@saatvik333](www.linkedin.com/in/saatvik333)
+
+- my insta [@saatvik333](https://instagram.com/saatvik333)
+  
+- my email saatvik333sharma@gmail.com
