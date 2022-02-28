@@ -1,9 +1,13 @@
 # **hyy!!!**
 
+<div align="justify">
+  <a href="#">
+    <img src="https://komarev.com/ghpvc/?username=saatvik333&color=4c566a&style=for-the-badge">
+  </a>
+</div>
+
 #### About Me:
-
 I'm a CSE sophomore getting my hands dirty in programming.
-
 
 #### Programming Languages:
 ![icons8-c++-96](https://user-images.githubusercontent.com/75624562/155842804-f6d96628-6094-4613-bb24-35ae5d6b97ff.png)
