@@ -7,7 +7,7 @@
 </div>
 
 #### **About Me:**
-I'm a CSE sophomore getting my hands dirty in programming.
+wubba lubba dub dub
 
 #### **Learning:**
 ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
