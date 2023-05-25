@@ -1,4 +1,4 @@
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=30&duration=4000&pause=600&vCenter=true&width=435&lines=Hey+(%3A;this+is+Saatvik+Sharma;on+the+web+by+%40saatvik333" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=500&size=30&duration=4000&pause=600&color=3DBFB3&vCenter=true&width=435&lines=Hey+(%3A;this+is+Saatvik+Sharma;on+the+web+by+%40saatvik333" alt="Typing SVG" /></a>
 ---
 <div align = "justify">
   <a href = "#">
