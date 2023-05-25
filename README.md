@@ -60,8 +60,3 @@
 <!-- ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) -->
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
-#### **Reach Me:**
-- LinkedIn [@saatvik333](https://linkedin.com/in/saatvik333) 
-- Instagram [@saatvik333](https://instagram.com/saatvik333)
-- E-Mail saatvik333sharma@gmail.com
