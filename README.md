@@ -6,6 +6,8 @@
   </a>
 </div>
 
+![contribution snake](https://raw.githubusercontent.com/saatvik333/saatvik333/snake/github-contribution-grid-snake.svg)
+
 #### **About Me:**
 \>_> A computer science student with passion for technology.
 
