@@ -14,13 +14,11 @@
 
 Welcome! I'm a CS graduate exploring the intersection of cutting-edge technology and innovative problem-solving.
 #### **About:**
-\>_> A tech enthusiast with a foundation in computer science and a keen interest in emerging technologies.
-
 \>_< Currently delving into blockchain, fully homomorphic encryption, and cloud computing.
 
 \<_> I enjoy experimenting and exploring new technologies along with open-source projects, building tools, and learning from the developer communities.
 
-\<_< I use arch btw.
+\>_> I use arch btw.
 #### **Learning:**
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=red)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
