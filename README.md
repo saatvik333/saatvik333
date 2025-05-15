@@ -12,19 +12,16 @@
   <img alt="github-snake" src="github-contribution-grid-snake.svg" />
 </picture>
 
-Welcome! I'm a passionate CS graduate exploring the intersection of cutting-edge technology and innovative problem-solving. Whether it's blockchain, cloud computing, or full-stack development, I thrive on turning complex ideas into impactful solutions.
-
-#### **About Me:**
-\>_> A tech enthusiast with a solid foundation in computer science and a keen interest in emerging technologies.
+Welcome! I'm a CS graduate exploring the intersection of cutting-edge technology and innovative problem-solving.
+#### **About:**
+\>_> A tech enthusiast with a foundation in computer science and a keen interest in emerging technologies.
 
 \>_< Currently delving into blockchain, fully homomorphic encryption, and cloud computing.
 
-\<_> I enjoy experimenting and exploring new technologies with open-source projects, building tools, and learning from the developer community.
+\<_> I enjoy experimenting and exploring new technologies along with open-source projects, building tools, and learning from the developer communities.
 
-\<_< I use arch btw <img src="https://raw.githubusercontent.com/saatvik333/saatvik333/output/arch.png" width="16" height="16" />
-
+\<_< I use arch btw.
 #### **Learning:**
-![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=red)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 
