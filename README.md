@@ -12,7 +12,7 @@
 
 Welcome! I'm a CS graduate exploring the intersection of cutting-edge technology and innovative problem-solving.
 #### **About:**
-\>_< Currently delving into blockchain, fully homomorphic encryption, and cloud computing.
+\>_< Currently improving problem solving and neovim skills.
 
 \<_> I enjoy experimenting and exploring new technologies along with open-source projects, building tools, and learning from the developer communities.
 
