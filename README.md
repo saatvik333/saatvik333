@@ -10,18 +10,18 @@
   <img alt="github-snake" src="github-contribution-grid-snake.svg" />
 </picture>
 
-Welcome! I'm a CS graduate exploring the intersection of cutting-edge technology and innovative problem-solving.
-#### **About:**
-\>_< Currently improving problem solving and neovim skills.
+\>_< Currently improving logical and problem solving skills.
 
 \<_> I enjoy experimenting and exploring new technologies along with open-source projects, building tools, and learning from the developer communities.
 
-\>_> I use arch btw.
+\>_> I use arch btw
+
 #### **Learning:**
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=red)
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 
 #### **Languages:**
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
