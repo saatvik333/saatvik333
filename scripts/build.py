@@ -77,15 +77,24 @@ def main() -> int:
         activity["asleep"] = True
 
     args.cards.mkdir(parents=True, exist_ok=True)
+    tools = tools[: cfg["stack"].get("max_tools", 8)]
     for theme in cards.THEMES:
-        (args.cards / f"hero-{theme}.svg").write_text(cards.hero(theme, activity, cfg, now))
-        (args.cards / f"stack-{theme}.svg").write_text(
-            cards.stack(theme, langs, tools[: cfg["stack"].get("max_tools", 8)],
-                        cfg["stack"]["daily"], cfg["stack"]["days"]))
+        for layout in cards.LAYOUTS:
+            (args.cards / f"hero-{layout}-{theme}.svg").write_text(
+                cards.hero(theme, layout, activity, cfg, now))
+            (args.cards / f"stack-{layout}-{theme}.svg").write_text(
+                cards.stack(theme, layout, langs, tools, cfg["stack"]["daily"], cfg["stack"]["days"]))
 
+    alts = {
+        "hero": (f"Terminal: {activity['name']}, {cfg['tagline']}. Latest commit to "
+                 f"{latest.name}: {latest.commit}"),
+        "stack": ("Share of code written over the last year: "
+                  + ", ".join(f"{n} {round(s * 100)}%" for n, s, _ in langs)
+                  + f". Builds with {', '.join(tools)}. Daily: {', '.join(cfg['stack']['daily'])}."),
+    }
     tmpl = (ROOT / "README.tmpl.md").read_text()
     changed = [name for name, text in (
-        ("README.md", readme.render(tmpl, profile, placements, cfg)),
+        ("README.md", readme.render(tmpl, profile, placements, cfg, alts)),
         ("llms.txt", readme.llms(profile, placements, cfg)),
     ) if write_if_changed(ROOT / name, text)]
 

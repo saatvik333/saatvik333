@@ -1,20 +1,55 @@
 """README.md from README.tmpl.md, and llms.txt, from the classified snapshot.
 
 Template directives, each alone on a line:
-  {{links}}      website, X and email from the GitHub profile
-  {{sections}}   one heading + list per category in profile.json, ranked
-  {{lately N}}   the N most recently pushed visible repos with their last commit
+  {{views}}       profile-views badge in the cards' accent
+  {{hero}}        the live terminal card
+  {{stack}}       the stack card
+  {{links}}       website, X and email from the GitHub profile
+  {{sections}}    one heading + list per category in profile.json, ranked
+  {{lately N}}    the N most recently pushed visible repos with their last commit
 """
 
 from __future__ import annotations
 
 import re
+from html import escape
 
+from cards import BADGE, clip
 from projects import Placement, Repo, rank
+
+# Which card width each viewport gets. GitHub's README column is not monotonic in
+# the viewport: it narrows when the sidebar appears at 768px and again at 1012px.
+# Measured column widths (viewport -> image px): 360->278, 521->439, 767->685,
+# 768->398, 809->439, 1011->641, 1012->578, 1119->685, 1280+->840.
+# Each card keeps its 14px text between ~10px and ~15px on screen.
+MEDIA = {
+    "compact": ["(max-width: 521px)", "(min-width: 768px) and (max-width: 809px)"],
+    "medium": ["(max-width: 767px)", "(max-width: 1119px)"],  # after compact: first match wins
+}
+
+
+def picture(base: str, name: str, alt: str) -> str:
+    """<picture> choosing width by viewport and theme by colour scheme. GitHub keeps
+    `media` on <source> and maps prefers-color-scheme to the viewer's GitHub theme."""
+    def media(parts: list[str], dark: bool) -> str:
+        return ", ".join(f"{p} and (prefers-color-scheme: dark)" if dark else p for p in parts)
+
+    srcs = []
+    for layout, parts in MEDIA.items():
+        srcs.append(f'  <source media="{media(parts, True)}" srcset="{base}/{name}-{layout}-dark.svg">')
+        srcs.append(f'  <source media="{media(parts, False)}" srcset="{base}/{name}-{layout}-light.svg">')
+    srcs.append(f'  <source media="(prefers-color-scheme: dark)" srcset="{base}/{name}-wide-dark.svg">')
+    return "\n".join(["<picture>", *srcs,
+                      f'  <img alt="{escape(alt)}" src="{base}/{name}-wide-light.svg" width="100%">',
+                      "</picture>"])
 
 
 def _stars(r: Repo) -> str:
     return f" `★ {r.stars:,}`" if r.stars else ""
+
+
+def _sentence(s: str) -> str:
+    return s[:1].upper() + s[1:]
 
 
 def links(profile: dict) -> str:
@@ -36,7 +71,7 @@ def sections(placements: list[Placement], cfg: dict) -> str:
         if not members:
             continue
         out.append(f"### {cat['title']}\n")
-        out += [f"- [**{p.repo.name}**]({p.repo.url}){_stars(p.repo)}: {p.repo.description}"
+        out += [f"- [**{p.repo.name}**]({p.repo.url}){_stars(p.repo)} · {_sentence(p.repo.description)}"
                 for p in members]
         out.append("")
     return "\n".join(out).rstrip()
@@ -45,13 +80,25 @@ def sections(placements: list[Placement], cfg: dict) -> str:
 def lately(placements: list[Placement], n: int) -> str:
     visible = [p.repo for p in placements if p.category and p.repo.committed]
     visible.sort(key=lambda r: r.committed, reverse=True)
+    def msg(s: str) -> str:  # cut at a word boundary, not mid-word
+        return s if len(s) <= 72 else s[:72].rsplit(" ", 1)[0].rstrip(",;:") + "…"
     return "\n".join(
-        f"- `{r.committed:%b %d}`".lower() + f" [{r.name}]({r.url}): {r.commit}" for r in visible[:n])
+        f"- `{r.committed:%b %d}`".lower() + f" [{r.name}]({r.url}) · {msg(r.commit)}" for r in visible[:n])
 
 
-def render(tmpl: str, profile: dict, placements: list[Placement], cfg: dict) -> str:
+def render(tmpl: str, profile: dict, placements: list[Placement], cfg: dict,
+           alts: dict[str, str]) -> str:
+    """`alts`: card name -> alt text. Alts carry the data the images show, without
+    relative times, so the README only changes when the data does."""
+    base = f"https://raw.githubusercontent.com/{cfg['user']}/{cfg['user']}/cards"
+
     def directive(m: re.Match) -> str:
         cmd, _, arg = m.group(1).strip().partition(" ")
+        if cmd == "views":
+            return (f'<img height="20" alt="profile views" src="https://komarev.com/ghpvc/'
+                    f'?username={cfg["user"]}&color={BADGE}&style=for-the-badge">')
+        if cmd in ("hero", "stack"):
+            return picture(base, cmd, alts[cmd])
         if cmd == "links":
             return links(profile)
         if cmd == "sections":

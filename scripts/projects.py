@@ -45,7 +45,7 @@ query($login: String!) {
         }
         defaultBranchRef {
           name
-          target { ... on Commit { history(first: 1) { nodes { messageHeadline committedDate } } } }
+          target { ... on Commit { history(first: 1) { nodes { message committedDate } } } }
         }
         pkg: object(expression: "HEAD:package.json") { ... on Blob { text } }
         cargo: object(expression: "HEAD:Cargo.toml") { ... on Blob { text } }
@@ -158,7 +158,7 @@ def fetch(user: str) -> tuple[dict, list[Repo]]:
             languages={e["node"]["name"]: (e["size"], e["node"]["color"] or "#8b949e")
                        for e in n["languages"]["edges"]},
             branch=ref.get("name") or "main",
-            commit=(hist or {}).get("messageHeadline", ""),
+            commit=(hist or {}).get("message", "").split("\n", 1)[0].strip(),
             committed=_iso(hist["committedDate"]) if hist else None,
             deps=parse_deps(_blob(n, "pkg"), _blob(n, "cargo"), _blob(n, "pyproject")),
             pinned=pins.index(n["name"]) if n["name"] in pins else None,
