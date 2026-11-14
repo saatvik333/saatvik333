@@ -316,7 +316,7 @@ def stack(theme: str, layout: str, langs: list[tuple[str, float, str]], tools: l
     alt = ", ".join(f"{n} {s * 100:.1f}%" for n, s, _ in langs)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {h}" width="{W}" height="{h}" role="img" aria-labelledby="t d">
 <title id="t">stack</title>
-<desc id="d">Share of code written over the last {span}: {escape(alt)}. Builds with {escape(", ".join(tools))}.</desc>
+<desc id="d">Share of code in repos I pushed to in the last {span}: {escape(alt)}. Builds with {escape(", ".join(tools))}.</desc>
 <style>
 text{{font:13px {FONT};white-space:pre}}
 .s{{transform-box:fill-box;transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}}
@@ -327,8 +327,8 @@ text{{font:13px {FONT};white-space:pre}}
 </style>
 <rect x="1" y="1" width="{W - 2}" height="{h - 2}" rx="10" fill="{c["panel"]}" stroke="{c["border"]}"/>
 <path d="M1 36h{W - 2}" stroke="{c["border"]}"/>
-<text x="{x0}" y="23" fill="{c["muted"]}"><tspan fill="{c["accent"]}">{escape(PROMPT)}</tspan>stack · last {span}</text>
-<text x="{W - x0}" y="23" fill="{c["muted"]}" text-anchor="end">{"share of code written" if W >= 600 else "% of code"}</text>
+<text x="{x0}" y="23" fill="{c["muted"]}"><tspan fill="{c["accent"]}">{escape(PROMPT)}</tspan>stack · {"repos active in the last " + span if W >= 600 else "active repos"}</text>
+<text x="{W - x0}" y="23" fill="{c["muted"]}" text-anchor="end">{"share of code" if W >= 600 else "% of code"}</text>
 <rect x="{x0}" y="{bar_y}" width="{bar_w}" height="10" rx="5" fill="{c["track"]}"/>
 <clipPath id="bar"><rect x="{x0}" y="{bar_y}" width="{bar_w}" height="10" rx="5"/></clipPath>
 <g clip-path="url(#bar)">{"".join(segs)}</g>

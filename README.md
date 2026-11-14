@@ -49,7 +49,7 @@
   <source media="(max-width: 767px) and (prefers-color-scheme: dark), (max-width: 1119px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-medium-dark.svg">
   <source media="(max-width: 767px), (max-width: 1119px)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-medium-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-wide-dark.svg">
-  <img alt="Share of code written over the last year: Rust 32%, Python 32%, Java 10%, TypeScript 7%, C 5%, Dart 4%, JavaScript 3%, CSS 2%. Builds with vite, android, wayland, svelte, cloudflare, docker, flutter, llama.cpp. Daily: arch, niri, neovim, ghostty, tmux, helium." src="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-wide-light.svg" width="100%">
+  <img alt="Share of code in repos I pushed to in the last 12 months: Rust 32%, Python 32%, Java 10%, TypeScript 7%, C 5%, Dart 4%, JavaScript 3%, CSS 2%. Builds with vite, android, wayland, svelte, cloudflare, docker, flutter, llama.cpp. Daily: arch, niri, neovim, ghostty, tmux, helium." src="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-wide-light.svg" width="100%">
 </picture>
 </p>
 

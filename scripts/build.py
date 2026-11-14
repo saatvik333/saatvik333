@@ -88,7 +88,7 @@ def main() -> int:
     alts = {
         "hero": (f"Terminal: {activity['name']}, {cfg['tagline']}. Latest commit to "
                  f"{latest.name}: {latest.commit}"),
-        "stack": ("Share of code written over the last year: "
+        "stack": ("Share of code in repos I pushed to in the last 12 months: "
                   + ", ".join(f"{n} {round(s * 100)}%" for n, s, _ in langs)
                   + f". Builds with {', '.join(tools)}. Daily: {', '.join(cfg['stack']['daily'])}."),
     }
