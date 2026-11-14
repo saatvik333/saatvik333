@@ -1,0 +1,50 @@
+name: profile
+
+on:
+  schedule:
+    - cron: "17 * * * *" # hourly, off the top of the hour when Actions is busiest
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [README.tmpl.md, profile.json, scripts/**, assets/**, .github/workflows/profile.yml]
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GIT_AUTHOR_NAME: github-actions[bot]
+      GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+      GIT_COMMITTER_NAME: github-actions[bot]
+      GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: build
+        run: python3 scripts/build.py --cards dist
+
+      # rebuilt as a single commit each run, so hourly renders never pile up in history
+      - name: publish cards
+        working-directory: dist
+        run: |
+          git init -q -b cards && git add -A && git commit -q -m "render cards"
+          git push -qf "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" cards
+
+      # only when the data changed: a star, a pin, a description, a new repo
+      - name: commit readme
+        run: |
+          git add README.md llms.txt
+          git diff --cached --quiet && exit 0
+          git commit -q -m "chore: refresh profile"
+          git pull -q --rebase && git push -q

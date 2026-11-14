@@ -1,0 +1,10 @@
+# Saatvik Sharma
+
+> Saatvik Sharma's open-source tools. Each entry links the file an agent should read to set the tool up.
+
+## ai & agents
+
+- [helium-browser-agent](https://raw.githubusercontent.com/saatvik333/helium-browser-agent/main/AGENT-SETUP.md): Drive your running Helium browser from the shell: built for coding agents (tabs, DevTools, extensions, stealthy input). Source: https://github.com/saatvik333/helium-browser-agent
+- [hermes-skill-court](https://raw.githubusercontent.com/saatvik333/hermes-skill-court/main/README.md): Hermes Agent plugin: replays real tasks with and without each agent-written skill, scores the difference per model, and quarantines skills that make results worse. Source: https://github.com/saatvik333/hermes-skill-court
+- [open-llm](https://raw.githubusercontent.com/saatvik333/open-llm/main/README.md): Open LLM: a free, open book from first principles to the 2026 frontier of language models (PDF, EPUB, web). Written with AI, source-checked against 422 references. Source: https://github.com/saatvik333/open-llm
+- [ghostcaret](https://raw.githubusercontent.com/saatvik333/ghostcaret/master/README.md): Faint suggestions at your cursor in the apps you already use. Local model or your own key, no account, no telemetry. In development. Source: https://github.com/saatvik333/ghostcaret

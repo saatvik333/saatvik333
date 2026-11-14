@@ -1,0 +1,73 @@
+{
+  "user": "saatvik333",
+  "tagline": "tools for coding agents & the linux desktop",
+  "asleep_after_hours": 24,
+
+  "categories": [
+    {
+      "id": "agents",
+      "title": "ai & agents",
+      "limit": 6,
+      "topics": ["ai-agents", "agents", "coding-agents", "agent-skills", "mcp", "llm", "large-language-models", "browser-automation"],
+      "files": ["AGENT-SETUP.md", "SKILL.md", "/llms.txt"],
+      "deps": ["@modelcontextprotocol/sdk", "mcp", "rmcp", "anthropic", "@anthropic-ai/sdk", "openai", "llama-cpp-2", "llama-cpp-python", "hermes-agent"]
+    },
+    {
+      "id": "desktop",
+      "title": "linux desktop",
+      "limit": 6,
+      "topics": ["linux", "wayland", "hyprland", "niri", "sddm", "sddm-theme", "dotfiles", "ricing-linux", "hyprland-rice"],
+      "files": ["/PKGBUILD", "/metadata.desktop", "/flake.nix", ".config/*"],
+      "deps": ["wayland-client", "smithay-client-toolkit"]
+    },
+    {
+      "id": "apps",
+      "title": "apps",
+      "limit": 6,
+      "topics": ["android", "flutter", "browser-extension", "chrome-extension", "web-app", "mobile-game"],
+      "files": ["AndroidManifest.xml", "pubspec.yaml", "/manifest.json", "vite.config.*", "next.config.*"],
+      "languages": ["Java", "Kotlin", "Dart", "TypeScript", "JavaScript"]
+    }
+  ],
+
+  "overrides": {
+    "www": "hidden",
+    "wallpapers": "hidden",
+    "cornix-kb": "hidden",
+    "utility-scripts": "hidden"
+  },
+
+  "stale": { "months": 18, "min_stars": 10 },
+
+  "stack": {
+    "days": 365,
+    "min_share": 0.02,
+    "max_languages": 8,
+    "max_tools": 8,
+    "ignore_languages": ["Makefile", "Assembly", "Mako", "Vim Script", "Batchfile", "PowerShell"],
+    "daily": ["arch", "niri", "neovim", "ghostty", "tmux", "helium"],
+    "tools": {
+      "tauri": { "files": ["tauri.conf.json"], "deps": ["tauri", "@tauri-apps/api"] },
+      "flutter": { "files": ["pubspec.yaml"] },
+      "android": { "files": ["AndroidManifest.xml"] },
+      "docker": { "files": ["Dockerfile", "compose.yaml", "compose.yml", "docker-compose.yml", "docker-compose.yaml"] },
+      "cloudflare": { "files": ["wrangler.toml", "wrangler.json", "wrangler.jsonc"], "deps": ["wrangler"] },
+      "vite": { "files": ["vite.config.*"], "deps": ["vite"] },
+      "react": { "deps": ["react"] },
+      "next.js": { "files": ["next.config.*"], "deps": ["next"] },
+      "svelte": { "files": ["svelte.config.*"], "deps": ["svelte"] },
+      "tailwind": { "deps": ["tailwindcss", "@tailwindcss/vite"] },
+      "playwright": { "deps": ["playwright", "@playwright/test"] },
+      "tokio": { "deps": ["tokio"] },
+      "qt / qml": { "files": ["*.qml"] },
+      "nix": { "files": ["flake.nix"] },
+      "llama.cpp": { "deps": ["llama-cpp-2", "llama-cpp-python"], "topics": ["llama-cpp"] },
+      "wayland": { "deps": ["wayland-client", "smithay-client-toolkit"], "topics": ["wayland"] }
+    }
+  },
+
+  "llms": {
+    "summary": "Saatvik Sharma's open-source tools. Each entry links the file an agent should read to set the tool up.",
+    "categories": ["agents"]
+  }
+}
