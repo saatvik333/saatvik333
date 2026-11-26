@@ -22,7 +22,7 @@
 ### linux desktop
 
 - [**wayland-bongocat**](https://github.com/saatvik333/wayland-bongocat) `★ 495` · Bongocat for your desktop ₍^. .^₎
-- [**obscure-sddm-theme**](https://github.com/saatvik333/obscure-sddm-theme) `★ 44` · A minimal yet customizale sddm greeter theme
+- [**obscure-sddm-theme**](https://github.com/saatvik333/obscure-sddm-theme) `★ 45` · A minimal yet customizale sddm greeter theme
 - [**hyprland-dotfiles**](https://github.com/saatvik333/hyprland-dotfiles) `★ 278` · Yet another hyprland 🍚
 - [**niri-dotfiles**](https://github.com/saatvik333/niri-dotfiles) `★ 236` · Biased niri wm 🍚
 - [**fp-840G5**](https://github.com/saatvik333/fp-840G5) · Experimental native Linux fingerprint support for HP EliteBook 840 G5 (138a:00ab): libfprint fixes, installer and hardware validation
