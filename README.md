@@ -7,14 +7,14 @@
   <source media="(max-width: 767px) and (prefers-color-scheme: dark), (max-width: 1119px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/hero-medium-dark.svg">
   <source media="(max-width: 767px), (max-width: 1119px)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/hero-medium-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/hero-wide-dark.svg">
-  <img alt="Terminal: Saatvik Sharma, tools for coding agents &amp; the linux desktop. Latest commit to helium-browser-agent: Release 0.2.0" src="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/hero-wide-light.svg" width="100%">
+  <img alt="Terminal: Saatvik Sharma, tools for coding agents &amp; the linux desktop. Latest commit to hba: Group agent tabs in an hba tab group" src="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/hero-wide-light.svg" width="100%">
 </picture>
 
 [saatvik.me](https://saatvik.me) · [x/@saatvik333](https://x.com/saatvik333) · [mail](mailto:saatvik333sharma@gmail.com)
 
 ### ai & agents
 
-- [**helium-browser-agent**](https://github.com/saatvik333/helium-browser-agent) `★ 6` · Drive your running Helium browser from the shell: built for coding agents (tabs, DevTools, extensions, stealthy input)
+- [**hba**](https://github.com/saatvik333/hba) `★ 6` · Let coding agents use your real browser: your logins, their own tabs. A fast Rust CLI for Helium, Chrome and Brave, with DevTools and extension development from the shell
 - [**hermes-skill-court**](https://github.com/saatvik333/hermes-skill-court) `★ 1` · Hermes Agent plugin: replays real tasks with and without each agent-written skill, scores the difference per model, and quarantines skills that make results worse
 - [**open-llm**](https://github.com/saatvik333/open-llm) `★ 1` · Open LLM: a free, open book from first principles to the 2026 frontier of language models (PDF, EPUB, web). Written with AI, source-checked against 422 references
 - [**ghostcaret**](https://github.com/saatvik333/ghostcaret) · Faint suggestions at your cursor in the apps you already use. Local model or your own key, no account, no telemetry. In development
@@ -37,7 +37,7 @@
 
 ### lately
 
-- `nov 27` [helium-browser-agent](https://github.com/saatvik333/helium-browser-agent) · Release 0.2.0
+- `nov 27` [hba](https://github.com/saatvik333/hba) · Group agent tabs in an hba tab group
 - `nov 14` [bubble-level-android](https://github.com/saatvik333/bubble-level-android) · Update hairline: Stage, text scale, contrast, accessibility
 - `nov 14` [hairline](https://github.com/saatvik333/hairline) · Stage base view and Frame state; full system text scale on scrolling…
 - `nov 14` [what-you-reveal](https://github.com/saatvik333/what-you-reveal) · fix: bottom-section layout (section spacing, lone card span, two-column…
@@ -49,7 +49,7 @@
   <source media="(max-width: 767px) and (prefers-color-scheme: dark), (max-width: 1119px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-medium-dark.svg">
   <source media="(max-width: 767px), (max-width: 1119px)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-medium-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-wide-dark.svg">
-  <img alt="Share of code in repos I pushed to in the last 12 months: Rust 33%, Python 31%, Java 9%, TypeScript 6%, C 5%, Dart 4%, JavaScript 2%. Builds with vite, android, wayland, svelte, cloudflare, docker, flutter, llama.cpp. Daily: arch, niri, neovim, ghostty, tmux, helium." src="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-wide-light.svg" width="100%">
+  <img alt="Share of code in repos I pushed to in the last 12 months: Rust 33%, Python 30%, Java 9%, TypeScript 6%, C 5%, Dart 4%, JavaScript 2%. Builds with vite, android, wayland, svelte, cloudflare, docker, flutter, llama.cpp. Daily: arch, niri, neovim, ghostty, tmux, helium." src="https://raw.githubusercontent.com/saatvik333/saatvik333/cards/stack-wide-light.svg" width="100%">
 </picture>
 </p>
 
