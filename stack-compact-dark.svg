@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 356" width="380" height="356" role="img" aria-labelledby="t d">
+<title id="t">stack</title>
+<desc id="d">Share of code in repos I pushed to in the last 12 months: Rust 32.6%, Python 30.5%, Java 9.3%, TypeScript 6.5%, C 5.2%, Dart 4.2%, JavaScript 2.5%. Builds with vite, android, wayland, svelte, cloudflare, docker, flutter, llama.cpp.</desc>
+<style>
+text{font:13px ui-monospace,"JetBrainsMono Nerd Font","JetBrains Mono","SF Mono",Menlo,Consolas,monospace;white-space:pre}
+.s{transform-box:fill-box;transform-origin:left;animation:grow .9s cubic-bezier(.2,.7,.2,1) both}
+.g{animation:fade .5s ease-out both}
+@keyframes grow{from{transform:scaleX(0)}}@keyframes fade{from{opacity:0}}
+.s0{animation-delay:0.15s}.g0{animation-delay:0.25s}.s1{animation-delay:0.27s}.g1{animation-delay:0.37s}.s2{animation-delay:0.39s}.g2{animation-delay:0.49s}.s3{animation-delay:0.51s}.g3{animation-delay:0.61s}.s4{animation-delay:0.63s}.g4{animation-delay:0.73s}.s5{animation-delay:0.75s}.g5{animation-delay:0.85s}.s6{animation-delay:0.87s}.g6{animation-delay:0.97s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="1" y="1" width="378" height="354" rx="10" fill="#161b22" stroke="#3d444d"/>
+<path d="M1 36h378" stroke="#3d444d"/>
+<text x="18" y="23" fill="#9198a1"><tspan fill="#88c0d0">~ ❯ </tspan>stack · active repos</text>
+<text x="362" y="23" fill="#9198a1" text-anchor="end">% of code</text>
+<rect x="18" y="62" width="344" height="10" rx="5" fill="#262c36"/>
+<clipPath id="bar"><rect x="18" y="62" width="344" height="10" rx="5"/></clipPath>
+<g clip-path="url(#bar)"><rect class="s s0" x="18.0" y="62" width="110.1" height="10" fill="#dea584"/><rect class="s s1" x="130.1" y="62" width="102.8" height="10" fill="#3572A5"/><rect class="s s2" x="234.9" y="62" width="29.8" height="10" fill="#b07219"/><rect class="s s3" x="266.7" y="62" width="20.2" height="10" fill="#3178c6"/><rect class="s s4" x="288.9" y="62" width="16.0" height="10" fill="#555555"/><rect class="s s5" x="307.0" y="62" width="12.3" height="10" fill="#00B4AB"/><rect class="s s6" x="321.3" y="62" width="6.5" height="10" fill="#f1e05a"/></g>
+<g class="g g0"><circle cx="23.0" cy="99" r="4.5" fill="#dea584" stroke="#e6edf3" stroke-opacity=".25"/><text x="36.0" y="104" fill="#e6edf3">rust</text><text x="78.0" y="104" fill="#9198a1">32.6%</text></g><g class="g g1"><circle cx="195.0" cy="99" r="4.5" fill="#3572A5" stroke="#e6edf3" stroke-opacity=".25"/><text x="208.0" y="104" fill="#e6edf3">python</text><text x="266.8" y="104" fill="#9198a1">30.5%</text></g><g class="g g2"><circle cx="23.0" cy="125" r="4.5" fill="#b07219" stroke="#e6edf3" stroke-opacity=".25"/><text x="36.0" y="130" fill="#e6edf3">java</text><text x="78.0" y="130" fill="#9198a1">9.3%</text></g><g class="g g3"><circle cx="195.0" cy="125" r="4.5" fill="#3178c6" stroke="#e6edf3" stroke-opacity=".25"/><text x="208.0" y="130" fill="#e6edf3">typescript</text><text x="300.4" y="130" fill="#9198a1">6.5%</text></g><g class="g g4"><circle cx="23.0" cy="151" r="4.5" fill="#555555" stroke="#e6edf3" stroke-opacity=".25"/><text x="36.0" y="156" fill="#e6edf3">c</text><text x="52.8" y="156" fill="#9198a1">5.2%</text></g><g class="g g5"><circle cx="195.0" cy="151" r="4.5" fill="#00B4AB" stroke="#e6edf3" stroke-opacity=".25"/><text x="208.0" y="156" fill="#e6edf3">dart</text><text x="250.0" y="156" fill="#9198a1">4.2%</text></g><g class="g g6"><circle cx="23.0" cy="177" r="4.5" fill="#f1e05a" stroke="#e6edf3" stroke-opacity=".25"/><text x="36.0" y="182" fill="#e6edf3">javascript</text><text x="128.4" y="182" fill="#9198a1">2.5%</text></g>
+<text x="18" y="216" fill="#9198a1">builds with</text><text x="127.2" y="216" fill="#e6edf3">vite · android · wayland ·</text><text x="127.2" y="240" fill="#e6edf3">svelte · cloudflare ·</text><text x="127.2" y="264" fill="#e6edf3">docker · flutter ·</text><text x="127.2" y="288" fill="#e6edf3">llama.cpp</text>
+<text x="18" y="312" fill="#9198a1">daily</text><text x="127.2" y="312" fill="#e6edf3">arch · niri · neovim ·</text><text x="127.2" y="336" fill="#e6edf3">ghostty · tmux · helium</text>
+</svg>
