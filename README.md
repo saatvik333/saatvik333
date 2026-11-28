@@ -21,7 +21,7 @@
 
 ### linux desktop
 
-- [**wayland-bongocat**](https://github.com/saatvik333/wayland-bongocat) `★ 496` · Bongocat for your desktop ₍^. .^₎
+- [**wayland-bongocat**](https://github.com/saatvik333/wayland-bongocat) `★ 495` · Bongocat for your desktop ₍^. .^₎
 - [**obscure-sddm-theme**](https://github.com/saatvik333/obscure-sddm-theme) `★ 45` · A minimal yet customizale sddm greeter theme
 - [**hyprland-dotfiles**](https://github.com/saatvik333/hyprland-dotfiles) `★ 278` · Yet another hyprland 🍚
 - [**niri-dotfiles**](https://github.com/saatvik333/niri-dotfiles) `★ 236` · Biased niri wm 🍚
