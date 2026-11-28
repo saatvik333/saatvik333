@@ -31,7 +31,7 @@
 
 - [**what-you-reveal**](https://github.com/saatvik333/what-you-reveal) `★ 32` · A privacy analysis tool designed to show exactly what information your browser exposes to websites
 - [**tabula**](https://github.com/saatvik333/tabula) `★ 15` · A new-tab browser extension to improve your productivity
-- [**chain-reaction-reborn**](https://github.com/saatvik333/chain-reaction-reborn) `★ 2` · A polished, modern reimplementation of the classic atomic strategy game, featuring smart AI, local multiplayer, and a premium Flutter UI
+- [**chain-reaction-reborn**](https://github.com/saatvik333/chain-reaction-reborn) `★ 1` · A polished, modern reimplementation of the classic atomic strategy game, featuring smart AI, local multiplayer, and a premium Flutter UI
 - [**bubble-level-android**](https://github.com/saatvik333/bubble-level-android) · A calm bubble level for Android that calibrates on any firm surface. No ads, no permissions
 - [**hairline**](https://github.com/saatvik333/hairline) · Design system shared by the Spot On Android apps: tokens, drawing kit, settings page, accessibility and keyboard navigation, window chrome
 
